@@ -1,0 +1,5 @@
+1) lsvirtualenv
+2) workon inogeration_site
+3) /home/rgodhe/Django_Server/Go_Live
+4) python manage.py runserver 0:8100
+5) URL: http://35.184.243.87:8100/
