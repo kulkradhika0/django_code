@@ -25,8 +25,12 @@ SECRET_KEY = '_kj0cr51e#l7x+u)zlx@_8fy)0s0$&96rcz536hr6cean&&0rf'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['35.202.155.144','127.0.0.1','127.0.0.1:8200','127.0.0.1:8100','0:8100','0:8200']
 
+=======
+ALLOWED_HOSTS = ['35.224.0.205','35.224.0.205:8100','35.224.0.205:8200','127.0.0.1','127.0.0.1:8200','127.0.0.1:8100','0.0.0.0:8100','0.8100','18.218.82.100:8100','18.218.82.100:8200','18.218.82.100','ec2-18-218-82-100.us-east-2.compute.amazonaws.com','ec2-18-218-82-100.us-east-2.compute.amazonaws.com:8100','ec2-18-218-82-100.us-east-2.compute.amazonaws.com:8200']
+>>>>>>> 8422d38801702f72490835fb656cc79b35fda5fa
 
 # Application definition
 
@@ -54,7 +58,13 @@ MIDDLEWARE = [
 
 CORS_ORIGIN_ALLOW_ALL=False
 
+<<<<<<< HEAD
 CORS_ORIGIN_WHITELIST=('35.202.155.144','127.0.0.1','127.0.0.1:8200','127.0.0.1:8100','0:8100','0:8200')
+=======
+#CORS_ORIGIN_WHITELIST=('35.202.155.144','127.0.0.1','0:8100')
+
+CORS_ORIGIN_WHITELIST=('35.224.0.205','35.224.0.205:8100','35.224.0.205:8200','127.0.0.1','127.0.0.1:8200','127.0.0.1:8100','0.0.0.0:8100','0.8100','18.218.82.100:8100','18.218.82.100:8200','18.218.82.100','ec2-18-218-82-100.us-east-2.compute.amazonaws.com','ec2-18-218-82-100.us-east-2.compute.amazonaws.com:8100','ec2-18-218-82-100.us-east-2.compute.amazonaws.com:8200')
+>>>>>>> 8422d38801702f72490835fb656cc79b35fda5fa
 
 CORS_URL_REGEX = r'^/(GLV)/.*$'
 
@@ -128,5 +138,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+<<<<<<< HEAD
 #PASSCODE = '/home/rgodhe/Django_Server/Go_Live/.passcode'
 PASSCODE = '/home/demo/Radhika/django_code/Go_Live/.passcode'
+=======
+PASSCODE = '/home/ubuntu/Digital_Inauguration/django_code/Go_Live/.passcode'
+>>>>>>> 8422d38801702f72490835fb656cc79b35fda5fa
