@@ -24,13 +24,7 @@ def setPasscode(request):
 
 	else:
 		json_data = {'passcode':'3456'}
-<<<<<<< HEAD
 		print(json_data)
-=======
-		#json_data = json.loads(request.body)
-                print(json_data)
->>>>>>> 8422d38801702f72490835fb656cc79b35fda5fa
-
 	writeCode = open(Go_Live.settings.PASSCODE,'w')
 
 	ip = writeCode.write(str(json_data['passcode']))
@@ -53,7 +47,6 @@ def getPasscode(request):
 
 ####################################################
 
-<<<<<<< HEAD
 ##### TEST MODEL ACCESS
 
 ####################################################
@@ -69,8 +62,6 @@ def testModel(request):
 
 ####################################################
 
-=======
->>>>>>> 8422d38801702f72490835fb656cc79b35fda5fa
 ##### Set Passcode in model
 
 ####################################################
@@ -113,8 +104,4 @@ def listUsers(request):
 
 		uData.append(uRec)
 
-<<<<<<< HEAD
 	return JsonResponse(uData, safe=False)
-=======
-	return JsonResponse(uData, safe=False)
->>>>>>> 8422d38801702f72490835fb656cc79b35fda5fa
