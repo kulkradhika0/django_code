@@ -23,11 +23,12 @@ def setPasscode(request):
 
 	else:
 		json_data = {'passcode':'3456'}
+		#json_data = json.loads(request.body)
                 print(json_data)
 
-		writeCode = open(Go_Live.settings.PASSCODE,'w')
+	writeCode = open(Go_Live.settings.PASSCODE,'w')
 
-		ip = writeCode.write(str(json_data['passcode']))
+	ip = writeCode.write(str(json_data['passcode']))
 	return JsonResponse({"STATUS":"Success"}, safe=False)
 
 ####################################################
